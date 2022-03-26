@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Currency Check</title>
     <script src="./src/scripts/app.js" async defer></script>
+<!--    <script src="./src/scripts/promiseExamples.js" async defer></script>-->
 </head>
 <body>
 
@@ -15,15 +16,20 @@
 <form>
     <label for="currencyCode">Choose currency</label>
     <select id="currencyCode">
-        <option value="usd">Dollar</option>
-        <option value="eur">Euro</option>
-        <option value="rub">Rubel</option>
+
     </select>
     <button type="submit">Check</button>
 </form>
 
 <section>
     <pre id="response"></pre>
+</section>
+
+<section>
+    <h2>History:</h2>
+    <ul id="history">
+        <li>No records yet.</li>
+    </ul>
 </section>
 
 </body>
